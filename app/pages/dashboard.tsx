@@ -1,10 +1,10 @@
-export default function LoginPage() {
+export default function DashboardPage() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center gap-4">
         <main className="flex flex-col items-center justify-center gap-4">
             <div>
-                <h1 className="text-2xl font-bold">Bienvenido</h1>
-                <p className="text-gray-500">Inicia sesión para continuar</p>
+                <h1 className="text-2xl font-bold">Bienvenido al dashboard</h1>
+                <p className="text-gray-500">Dashboard Principal</p>
             </div>
             <form className="flex flex-col gap-4">
                 <input
@@ -21,10 +21,12 @@ export default function LoginPage() {
                     type="submit"
                     className="bg-blue-500 text-white rounded-md px-4 py-2 hover:bg-blue-600 transition-colors"
                 >
-                    Iniciar sesión
+                    dashboard
                 </button>
-            </form>
-        </main>
+            </form>         
+                
+            
+        </main> 
     </div>
-    );
+    );  
 }
