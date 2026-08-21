@@ -18,7 +18,7 @@ export default function Register() {
             </div>
         </div>
         <div>
-            <h1>Este es el login de la pagina</h1>
+            <h1>Este es el registro de la pagina</h1>
         </div>
       </main>
     </div>
