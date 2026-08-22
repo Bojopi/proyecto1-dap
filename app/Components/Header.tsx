@@ -1,7 +1,7 @@
 "use client";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRightFromBracket, faChartSimple, faListCheck, faUsers, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRightFromBracket, faChartSimple, faDiagramProject, faListCheck, faUsers, faUser } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 export default function Header() {
@@ -17,7 +17,10 @@ export default function Header() {
                     <FontAwesomeIcon icon={faUsers} aria-hidden="true" />
                     <span>Perfil</span>
                 </Link>
-                <Link href="/dashboard/projects">Proyectos</Link>
+                <Link href="/dashboard/projects" className="flex items-center gap-2">
+                    <FontAwesomeIcon icon={faDiagramProject} aria-hidden="true" />
+                    <span>Proyectos</span>
+                </Link>
                 <Link href="/dashboard/tasks" className="flex items-center gap-2">
                     <FontAwesomeIcon icon={faListCheck} aria-hidden="true" />
                     <span>Tareas</span>
