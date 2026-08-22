@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import React from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,11 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Prueba de Next.js 13.4",
-  description: "Pagina de Prueba de Next.js 13.4 con App Router y TailwindCSS",
+  title: "TaskFlow",
+  description: "Sistema de Gestión de Tareas y Proyectos",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: Readonly<{children: React.ReactNode;}>) {
   return (
     <html
       lang="en"
