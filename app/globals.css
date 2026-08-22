@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fff7fb;
+  --foreground: #40334a;
+  --lavender: #cdb4db;
+  --pink-light: #ffc8dd;
+  --pink: #ffafcc;
+  --blue-light: #bde0fe;
+  --blue: #a2d2ff;
+  --ink: #40334a;
+  --muted: #806f87;
 }
 
 @theme inline {
@@ -12,15 +19,34 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), sans-serif;
 }
+
+/* Shared palette overrides for the existing Tailwind utility classes. */
+.bg-white { background-color: #fff7fb; }
+.bg-gray-900, .bg-slate-900, .bg-\[\#313638\] { background-color: var(--lavender); }
+.bg-slate-50, .bg-zinc-50 { background-color: #fdf0f7; }
+.bg-slate-100 { background-color: #f8e8f1; }
+.bg-slate-200 { background-color: var(--lavender); }
+.bg-cyan-100 { background-color: var(--blue-light); }
+.bg-blue-500 { background-color: var(--blue); }
+.bg-emerald-500 { background-color: var(--blue-light); }
+.bg-amber-500 { background-color: var(--pink); }
+.bg-emerald-100 { background-color: var(--blue-light); }
+.bg-amber-100 { background-color: var(--pink-light); }
+
+.text-white, .text-black, .text-slate-900, .text-slate-800, .text-slate-700,
+.text-slate-600, .text-cyan-700, .text-blue-600, .text-blue-500,
+.text-emerald-600, .text-emerald-700, .text-amber-600, .text-amber-700 {
+  color: var(--ink);
+}
+.text-slate-500, .text-slate-400 { color: var(--muted); }
+
+.border-slate-100, .border-slate-200, .border-gray-300,
+.ring-slate-200 { border-color: var(--lavender); }
+.focus\:ring-blue-500:focus { --tw-ring-color: var(--blue); }
+.hover\:bg-cyan-700:hover, .hover\:bg-blue-600:hover { background-color: var(--pink); }
+.hover\:bg-slate-50:hover { background-color: #fff0f6; }
