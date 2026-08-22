@@ -9,4 +9,12 @@ export default function DashboardLayout({ children }: Readonly<{ children: React
 			<main className="min-w-0">{children}</main>
 		</div>
 	);
+import React from "react";
+import "../globals.css"
+
+
+export default function DashboardLayout({ children }: Readonly<{children: React.ReactNode;}>) {
+  return (
+    <main className="bg-slate-50 min-h-full">{children}</main>
+  );
 }

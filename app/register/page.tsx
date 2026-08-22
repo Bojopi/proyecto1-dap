@@ -19,6 +19,19 @@ export default function Register() {
             </form>
           </div>
           <div>
+              {/* entradas del usuario */}
+              <input type="text" placeholder="Nombre" />
+              <input type="text" placeholder="Apellido" />
+              <input type="email" placeholder="Correo" />
+              <input type="text" placeholder="Usuario" />
+              <input type="password" placeholder="Contraseña" />
+              <input type="password" placeholder="Confirma tu contraseña" />
+              {/* boton de registro */}
+              <button>Registrarse</button>
+            </form>
+          </div>
+          <div>
+            <h1>Este es el registrar de la pagina</h1>
           </div>
         </div>
       </main>
