@@ -6,7 +6,7 @@ export default function Register() {
         <div>
           <div>
             <form action="">
-              //entradas del usuario
+              //esta es la pantalla para registrarse
               <input type="text" placeholder="Nombre" className="border border-gray-300 rounded-md p-2 mb-4 w-full" />
               <input type="text" placeholder="Apellido" className="border border-gray-300 rounded-md p-2 mb-4 w-full" />
               <input type="email" placeholder="Correo" className="border border-gray-300 rounded-md p-2 mb-4 w-full" />
@@ -19,7 +19,6 @@ export default function Register() {
             </form>
           </div>
           <div>
-            <h1>Este es el registrar de la pagina</h1>
           </div>
         </div>
       </main>
