@@ -1,29 +1,27 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Header from "./components/Header";
 
 export const metadata: Metadata = {
-  title: "Prueba de Next.js 13.4",
-  description: "Pagina de Prueba de Next.js 13.4 con App Router y TailwindCSS",
+  title: "Taskflow",
+  description: "Gestión de proyectos",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="es">
+      <body className="bg-purple-50 dark:bg-gray-900">
+        <Header />
+        <main className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)] p-4">
+          <div className="w-full max-w-3xl">
+            {children}
+          </div>
+        </main>
+      </body>
     </html>
   );
 }
