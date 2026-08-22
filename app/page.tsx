@@ -34,7 +34,7 @@ export default function Home() {
         </div>
 
         <div className="mb-8 border-l-4 border-[#b98d29] bg-[#f8f0d8] px-4 py-3 text-sm text-[#5c4b22] shadow-sm">
-          <strong className="font-black uppercase tracking-wide">Aviso de parodia:</strong> las noticias de esta portada son ficción y buscan únicamente el humor. No representan hechos ni personas reales, solo para molestar a Eduardo Ribera.
+          <strong className="font-black uppercase tracking-wide">Aviso de parodia:</strong> las noticias de esta portada son ficción y buscan únicamente el humor. No representan hechos ni personas reales.
         </div>
 
         <section className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr_0.75fr]">
