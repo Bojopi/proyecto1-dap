@@ -37,6 +37,13 @@ body {
 .bg-amber-500 { background-color: var(--pink); }
 .bg-emerald-100 { background-color: var(--blue-light); }
 .bg-amber-100 { background-color: var(--pink-light); }
+.bg-lavender { background-color: var(--lavender); }
+.bg-pink-light { background-color: var(--pink-light); }
+.bg-pink { background-color: var(--pink); }
+.bg-blue-light { background-color: var(--blue-light); }
+.text-ink { color: var(--ink); }
+.hover\:bg-pink:hover { background-color: var(--pink); }
+.hover\:bg-pink-light:hover { background-color: var(--pink-light); }
 
 .text-white, .text-black, .text-slate-900, .text-slate-800, .text-slate-700,
 .text-slate-600, .text-cyan-700, .text-blue-600, .text-blue-500,
