@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5efe6;
+  --foreground: #332b26;
+  --cream: #f5efe6;
+  --terracotta: #b9654b;
+  --terracotta-dark: #8f4938;
 }
 
 @theme inline {
@@ -12,15 +15,28 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.bg-zinc-50 { background-color: var(--cream) !important; }
+.bg-blue-50 { background-color: #fbf1e8 !important; }
+.bg-blue-100 { background-color: #f2ddd2 !important; }
+.bg-blue-500,
+.bg-blue-600 { background-color: var(--terracotta) !important; }
+.bg-blue-700 { background-color: var(--terracotta-dark) !important; }
+.border-blue-800 { border-color: var(--terracotta-dark) !important; }
+.text-blue-600,
+.text-blue-700 { color: var(--terracotta-dark) !important; }
+.hover\:bg-blue-600:hover,
+.hover\:bg-blue-700:hover { background-color: var(--terracotta-dark) !important; }
+.hover\:bg-blue-50:hover { background-color: #fbf1e8 !important; }
+.hover\:text-blue-700:hover { color: var(--terracotta-dark) !important; }
+.outline-blue-500:focus { outline-color: var(--terracotta) !important; }
+
+::selection {
+  background: #e4b9a8;
+  color: #332b26;
 }

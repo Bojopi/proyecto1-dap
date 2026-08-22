@@ -14,6 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  title: "Create Next App",
+  description: "sistema de gestion de tareas y proyectos",
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   title: "TaskFlow",
   description: "Sistema de Gestión de Tareas y Proyectos",
 };
@@ -23,7 +28,7 @@ export default function RootLayout({ children }: Readonly<{children: React.React
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
+      >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
